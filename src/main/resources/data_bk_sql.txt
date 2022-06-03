@@ -1,0 +1,15 @@
+//초기데이터
+//create table user (id integer not null, join_date timestamp, name varchar(255), password varchar(255), ssn varchar(255), primary key (id))
+//https://zzang9ha.tistory.com/371
+/*
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true <-- 추가
+*/
+
+insert into user values(1, sysdate(), 'user1', 'test1234', '112233-1122334');
+insert into user values(2, sysdate(), 'user2', 'test1234', '222233-1122334');
+insert into user values(3, sysdate(), 'user2', 'test1234', '332233-1122334');
